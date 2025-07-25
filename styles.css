@@ -190,6 +190,17 @@ h2 {
     color: #554C4C;
 }
 
+#music h4 {
+    font-size: 24px; /* Lascia questa dimensione o adeguala */
+    color: #554C4C; /* Imposta il colore del testo principale */
+    font-weight: bold; /* Rende il testo in grassetto */
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
 #music .music-list { /* Modificato per targettare solo la ul dentro #music */
     list-style: none; /* Rimuovi i pallini della lista */
     padding: 0;
@@ -412,6 +423,11 @@ h2 {
     /* Music Section - Mobile Specific */
     .music-item {
         margin-bottom: 30px; /* Riduci lo spazio tra gli elementi su mobile */
+    }
+
+    #music h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .music-embed iframe {
