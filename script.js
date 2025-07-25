@@ -26,13 +26,17 @@ document.addEventListener('scroll', function() {
     });
 });
 
-// Smooth Scrolling for Navigation
-document.querySelectorAll('nav a, .logo a').forEach(anchor => {
+// Smooth Scrolling for Navigation AND Score items linking to contacts
+document.querySelectorAll('nav a, .logo a, .score-item a[href="#contacts"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        e.preventDefault(); // Previene il comportamento di default del link
+        const targetId = this.getAttribute('href').substring(1); // Ottiene l'ID della sezione (es. "contacts")
+        const targetSection = document.getElementById(targetId); // Trova la sezione corrispondente
+        
+        // Scorri alla sezione con animazione fluida
+        if (targetSection) { // Assicurati che la sezione esista
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
 
