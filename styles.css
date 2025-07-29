@@ -169,7 +169,7 @@ h2 {
 .social-links {
     position: static; /* Rendi statico su mobile per farlo scorrere con il contenuto */
     transform: none;
-    margin-top: 60px; /* Aggiungi un po' di margine in alto */
+    margin-top: 50px; /* Aggiungi un po' di margine in alto */
     width: auto; /* Lascia che la larghezza sia automatica */
     padding-bottom: 20px;
 }
