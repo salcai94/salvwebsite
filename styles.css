@@ -462,10 +462,6 @@ h2 {
         margin-top: 140px; /* Spazio aggiuntivo per i link social */
     }
 
-    .bg-image[data-section="home"] {
-        background-position: calc(50% + 120px) center; /* Sposta il centro del 50% più 120px a destra */
-    }
-
     /* Music Section - Mobile Specific */
     .music-item {
         margin-bottom: 30px; /* Riduci lo spazio tra gli elementi su mobile */
@@ -483,11 +479,7 @@ h2 {
     .music-description {
         padding: 0 10px; /* Aggiungi padding laterale per il testo */
     }
-
-    .bg-image[data-section="music"] {
-        background-position: center calc(50% + 100px); /* Sposta il centro del 50% meno 120px verso l'alto */
-    }
-
+    
     /* Scores Section - Mobile Specific */
     .scores-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Potresti voler 2 colonne piccole */
