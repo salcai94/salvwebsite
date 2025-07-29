@@ -33,7 +33,7 @@ export async function onRequestPost({ request, env }) {
           },
         ],
         from: {
-          email: "no-reply@tuo-dominio.com", // <--- CAMBIA CON UN SOTTODOMINIO DEL TUO DOMINIO! es. no-reply@salvatorecaiazzo.com
+          email: "no-reply@salvatorecaiazzo.com", // <--- CAMBIA CON UN SOTTODOMINIO DEL TUO DOMINIO! es. no-reply@salvatorecaiazzo.com
           name: "Form Contatti Sito",
         },
         subject: subject,
