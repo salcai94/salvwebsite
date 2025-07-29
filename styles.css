@@ -340,6 +340,23 @@ h2 {
     flex-direction: column;
 }
 
+/* Stile per il paragrafo di promozione del servizio */
+.service-promo {
+    font-size: 1.1em; /* Leggermente più grande del testo normale */
+    line-height: 1.6;
+    margin-bottom: 30px; /* Spazio sotto il testo e prima del form */
+    text-align: center; /* Centra il testo */
+    max-width: 700px; /* Limita la larghezza per una migliore leggibilità */
+    margin-left: auto;
+    margin-right: auto; /* Centra il blocco di testo */
+    color: #F3F5F6; /* Colore del testo principale, assicurati che sia visibile sul background */
+}
+
+.service-promo strong {
+    color: #FF7700; /* Puoi usare un colore più brillante per l'enfasi, se lo desideri */
+    font-weight: bold;
+}
+
 #contact-form label {
     margin-top: 10px;
 }
@@ -473,6 +490,12 @@ h2 {
         min-height: auto; /* Lascia che l'altezza sia definita dal contenuto */
         margin-bottom: 40px; /* Spazio tra le sezioni */
     }
+
+    .service-promo {
+        font-size: 1em;
+        margin-bottom: 20px;
+        padding: 0 15px; /* Aggiungi un po' di padding sui lati per mobile */
+    } 
 }
 
 /* Desktop Specific Styles (min-width media queries) */
