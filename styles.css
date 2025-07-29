@@ -340,6 +340,35 @@ h2 {
     flex-direction: column;
 }
 
+#contacts input[type="text"],
+#contacts input[type="email"],
+#contacts textarea {
+    color: #F3F5F6; /* Imposta il colore del testo digitato su bianco */
+    background-color: transparent; /* Rende lo sfondo del campo trasparente (opzionale, ma comune) */
+    border: 1px solid #777; /* Rendi il bordo visibile, magari un grigio più scuro */
+    padding: 10px;
+    margin-bottom: 15px;
+    width: calc(100% - 20px); /* Regola la larghezza tenendo conto del padding */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza */
+    border-radius: 5px; /* Angoli leggermente arrotondati */
+    font-family: 'Georgia', serif; /* Assicurati che il font sia lo stesso del resto del testo */
+    font-size: 1em;
+}
+
+/* Stile per il placeholder (il testo suggerito all'interno del campo prima che l'utente scriva) */
+#contacts input::placeholder,
+#contacts textarea::placeholder {
+    color: rgba(243, 245, 246, 0.7); /* Un bianco leggermente più trasparente per il placeholder */
+}
+
+/* Stile per il focus (quando il campo è selezionato) */
+#contacts input[type="text"]:focus,
+#contacts input[type="email"]:focus,
+#contacts textarea:focus {
+    border-color: #FF7700; /* Colore arancione del tuo tema quando il campo è attivo */
+    outline: none; /* Rimuove il contorno predefinito del browser */
+}
+
 /* Stile per il paragrafo di promozione del servizio */
 .service-promo {
     font-size: 1.1em; /* Leggermente più grande del testo normale */
