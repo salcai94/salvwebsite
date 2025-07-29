@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Salvatore Caiazzo's Website...</title>
+    <meta http-equiv="refresh" content="0; url=https://salvatorecaiazzo.com">
+    <style>
+        body {
+            font-family: 'Georgia', sans-serif;
+            background-color: #B7ABA7; /* Sfondo simile al tuo sito */
+            color: #F3F5F6; /* Colore del testo principale */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #837A7A; /* Sfondo leggermente più scuro per il container */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #DDE1E4;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #F3F5F6;
+        }
+        /* Stili per il pulsante, anche se con reindirizzamento automatico non sarà visibile a lungo */
+        .redirect-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #FF7700; /* Arancione del tuo tema */
+            color: #F3F5F6;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .redirect-button:hover {
+            background-color: #E66A00; /* Arancione leggermente più scuro al hover */
+        }
+        .info-text {
+            font-size: 0.9em;
+            color: #DDE1E4;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .redirect-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting you to Salvatore Caiazzo's website...</h1>
+        <p>If you are not redirected automatically, please click the button below.</p>
+        <a href="https://salvatorecaiazzo.com" target="_blank" class="redirect-button" rel="noopener noreferrer">Click Here to Enter</a>
+    </div>
+
+    <script>
+        // Funzione per rilevare il browser in-app di Instagram/Facebook
+        function isFacebookInstagramInAppBrowser() {
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1) || (ua.indexOf("Instagram") > -1);
+        }
+
+        // URL del tuo sito principale
+        const mainWebsiteUrl = "https://salvatorecaiazzo.com"; // <-- RICORDA DI SOSTITUIRE QUESTO
+
+        // Esegui il reindirizzamento solo se non siamo in un browser in-app di Meta
+        // o tentiamo di aprire in una nuova finestra/tab per forzare l'uscita
+        document.addEventListener('DOMContentLoaded', function() {
+            if (isFacebookInstagramInAppBrowser()) {
+                // Per i browser in-app, cerchiamo di aprire in un nuovo tab/browser esterno
+                // Questo spesso funziona meglio che un semplice window.location.href
+                window.open(mainWebsiteUrl, '_blank');
+                // Come fallback, anche se spesso bloccato nei browser in-app
+                window.location.href = mainWebsiteUrl;
+            } else {
+                // Per i browser normali, reindirizza direttamente
+                window.location.href = mainWebsiteUrl;
+            }
+        });
+    </script>
+</body>
+</html>
