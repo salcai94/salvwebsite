@@ -47,4 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         homeBg.style.animation = 'none';
     }, 1000); // Match animation duration (1s)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
