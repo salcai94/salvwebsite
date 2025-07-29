@@ -27,13 +27,13 @@ export async function onRequestPost({ request, env }) {
         personalizations: [
           {
             to: [{ email: "salvatore.caiazzo94@gmail.com", name: "Salvatore Caiazzo" }], // <--- CAMBIA CON LA TUA EMAIL!
-            dkim_domain: "salvatore.caiazzo.com", // <--- CAMBIA CON IL TUO DOMINIO! es. salvatorecaiazzo.com
+            dkim_domain: "salvatorecaiazzo.com", // <--- CAMBIA CON IL TUO DOMINIO! es. salvatorecaiazzo.com
             dkim_selector: "mailchannels",
             dkim_private_key: env.MAILCHANNELS_DKIM_PRIVATE_KEY, // Variabile d'ambiente, vedi Passo 4
           },
         ],
         from: {
-          email: "no-reply@salvatorecaiazzo.com", // <--- CAMBIA CON UN SOTTODOMINIO DEL TUO DOMINIO! es. no-reply@salvatorecaiazzo.com
+          email: "info@salvatorecaiazzo.com", // <--- CAMBIA CON UN SOTTODOMINIO DEL TUO DOMINIO! es. no-reply@salvatorecaiazzo.com
           name: "Form Contatti Sito",
         },
         subject: subject,
